@@ -1,78 +1,57 @@
 <template>
-  <div class="app">
-    <hello-world class="app__hello"
-      title="Welcome to your Vue MDC Adapter App"
-      :vmaLinks="vmaLinks"
-      :mdcLinks="mdcLinks">
-    </hello-world>
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">
+        <v-img
+          :alt="game.name"
+          class="shrink mr-2"
+          contain
+          :src="compute_game_icon_filename(game.tag)"
+          transition="scale-transition"
+          width="40"
+        />
+        <div class="mapchooser-game-title">{{ game.name }}</div>
+      </div>
+      <v-spacer></v-spacer>
+      <div>Map Chooser</div>
+    </v-app-bar>
+
+    <v-content>
+      <MapChooser />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
+import MapChooser from "./components/MapChooser";
 
-  export default {
-    data () {
-      return {
-        vmaLinks: [
-          {
-            title: 'Documentation',
-            url: 'https://stasson.github.io/vue-mdc-adapter'
-          },
-          {
-            title: 'GitHub',
-            url: 'https://github.com/stasson/vue-mdc-adapter'
-          },
-          {
-            title: 'Twitter',
-            url: 'https://twitter.com/vuemdc'
-          },
-          {
-            title: 'Chat',
-            url: 'https://gitter.im/vue-mdc-adapter/Lobby'
-          }
-        ],
-        mdcLinks: [
-          {
-            title: 'Documentation',
-            url: 'https://material.io/components/web/'
-          },
-          {
-            title: 'GitHub',
-            url: 'https://github.com/material-components/material-components-web'
-          },
-          {
-            title: 'Guidelines',
-            url: 'https://material.io/guidelines'
-          },
-          {
-            title: 'Awesome Material Components',
-            url: 'https://github.com/webdenim/awesome-material-components'
-          }
-        ]
-      }
+export default {
+  name: "App",
+
+  components: {
+    MapChooser
+  },
+
+  data: () => ({
+    game: {
+      tag: "q3a",
+      name: "Quake 3 Arena"
     },
-    components: { HelloWorld }
-  }
+    compute_game_icon_filename(tag) {
+      return require(`./assets/games/${tag}.png`);
+    }
+  })
+};
 </script>
-
 <style lang="scss">
-  // First, set the value for variable
-  $mdc-typography-font-family: "Roboto Mono", monospace;
+.v-application {
+  min-height: 100vh;
+  display: flex;
+}
 
-  // Then, import required files
-  @import "@material/typography/mixins";
-
-  html {
-    width: 100%;
-    height: 100%;
-  }
-
-  body {
-    @include mdc-typography(body2);
-
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-  }
+.mapchooser-game-title {
+  margin-left: 1em;
+  font-size: x-large;
+  font-weight: bold;
+}
 </style>

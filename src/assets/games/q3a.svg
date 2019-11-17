@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="q3a.svg"
+   inkscape:export-filename="/home/sardylan/develop/lanparty/mapchooser-q3a/src/assets/games/q3a.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="1099.9087"
+     inkscape:cy="-449.08922"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-26.06665)">
+    <path
+       style="fill:#d90000;stroke-width:1.08403194;fill-opacity:1"
+       d="m 136.17297,282.09484 c -0.33626,-3.13015 -2.13793,-30.0819 -4.00376,-59.89278 l -3.39242,-54.20159 3.54956,-65.58394 c 1.95227,-36.071153 3.95463,-66.039177 4.44973,-66.595669 0.49507,-0.556462 1.20376,-0.708137 1.57486,-0.33703 0.37111,0.371108 2.29259,29.851348 4.27,65.511669 l 3.59523,64.83693 -3.15474,54.20159 c -3.57814,61.47668 -4.07438,67.75198 -5.35735,67.75198 -0.50585,0 -1.19485,-2.56103 -1.53111,-5.69116 z m -23.85192,-15.17645 c -0.33801,-3.13015 -1.90175,-26.17938 -3.47496,-51.22053 -1.5732,-25.04111 -2.98969,-45.68317 -3.1477,-45.87116 -0.15794,-0.18806 -7.04419,-1.31478 -15.30259,-2.50391 C 60.16102,162.9693 36.42154,156.98503 22.26297,150.14782 10.86093,144.64174 5.7662998,140.09436 3.8864298,133.74524 0.87801977,123.5846 7.3133898,116.65321 25.05133,110.949 c 16.21765,-5.2153 20.04516,-3.07856 5.2043,2.90534 -10.29493,4.15099 -17.02234,8.55441 -19.31819,12.64473 -1.4640902,2.60842 -1.4277302,3.07257 0.3987,5.09076 4.23451,4.67905 27.83556,11.74445 47.24188,14.14268 5.06786,0.62631 20.92184,1.7046 35.23104,2.3962 14.30923,0.69164 26.18467,1.38589 26.38991,1.54282 0.48806,0.3732 -4.13283,114.81975 -4.82151,119.41491 -0.79944,5.33409 -2.36628,4.22264 -3.05641,-2.16805 z m 47.02158,3.25209 c -0.0276,-1.34148 -1.17662,-28.78104 -2.5531,-60.97679 -1.37652,-32.19574 -2.34563,-58.83086 -2.15361,-59.18913 0.19206,-0.35829 8.29226,-0.98939 18.00055,-1.40244 36.84312,-1.56765 52.28408,-3.56813 69.68496,-9.02815 19.53608,-6.12999 22.6827,-9.70272 14.80992,-16.81535 -4.07791,-3.68413 -15.69201,-9.81359 -21.22704,-11.2028 -3.13442,-0.78671 -3.84416,-3.71919 -0.9001,-3.71897 3.56162,2.8e-4 18.58338,5.14594 23.5927,8.08159 8.39505,4.91981 11.15625,12.23693 7.72062,20.45953 -1.9193,4.59356 -6.80924,8.63313 -16.13625,13.33016 -14.56333,7.33396 -33.29739,12.33289 -64.65769,17.25307 -9.17875,1.44009 -16.79255,2.75085 -16.91952,2.91282 -0.12691,0.16194 -1.54767,22.24617 -3.15714,49.07596 -3.0804,51.35082 -3.29513,53.65957 -4.99055,53.65957 -0.58485,0 -1.08606,-1.09759 -1.11375,-2.43907 z"
+       id="path906"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
