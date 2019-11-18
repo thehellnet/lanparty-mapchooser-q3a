@@ -5,11 +5,17 @@
         <div class="mapchooser-title">Current map</div>
         <MapDetail :olgMap="currentMap" />
         <div class="mapchooser-actions">
-          <v-btn color="primary" x-large block>FAST RESTART</v-btn>
-          <v-btn color="error" x-large block>MAP RESTART</v-btn>
+          <v-btn color="primary" x-large block v-on:click="fastRestart()"
+            >FAST RESTART
+          </v-btn>
+          <v-btn color="error" x-large block v-on:click="mapRestart()"
+            >MAP RESTART
+          </v-btn>
         </div>
         <div class="mapchooser-actions">
-          <v-btn color="green" x-large block>RANDOM MAP</v-btn>
+          <v-btn color="green" x-large block v-on:click="randomMap()"
+            >RANDOM MAP
+          </v-btn>
         </div>
       </v-col>
       <v-col xl="8" lg="7" md="7" cols="12">
@@ -22,13 +28,19 @@
                   <v-img
                     class="mapchooser-map-image"
                     :alt="item.tag"
-                    :src="compute_levelshot_filename('q3a', item.tag)"
+                    :src="require(`@/assets/levelshots/q3a/${item.tag}.jpg`)"
                   />
                 </v-col>
                 <v-col xl="5" lg="6" md="7" cols="12">
                   <MapDetail :olgMap="item" />
                   <div class="mapchooser-actions">
-                    <v-btn color="blue" x-large block>RUN</v-btn>
+                    <v-btn
+                      color="blue"
+                      x-large
+                      block
+                      v-on:click="mapRun(item.tag)"
+                      >RUN
+                    </v-btn>
                   </div>
                 </v-col>
               </v-row>
@@ -43,6 +55,7 @@
 <script>
 import OlgMap from "../models/olgmap.model";
 import MapDetail from "./MapDetail";
+import apiService from "../services/api";
 
 export default {
   name: "MapChooser",
@@ -70,11 +83,30 @@ export default {
       new OlgMap("q3dm17", "The Longest Yard"),
       new OlgMap("q3dm18", "Space Chamber"),
       new OlgMap("q3dm19", "Apocalypse Void")
-    ],
-    compute_levelshot_filename(game, tag) {
-      return require(`../assets/levelshots/${game}/${tag}.jpg`);
+    ]
+  }),
+  methods: {
+    async fastRestart() {
+      let loader = this.$loading.show();
+      await apiService.fastRestart();
+      loader.hide();
+    },
+    async mapRestart() {
+      let loader = this.$loading.show();
+      await apiService.mapRestart();
+      loader.hide();
+    },
+    async randomMap() {
+      let loader = this.$loading.show();
+      await apiService.randomMap();
+      loader.hide();
+    },
+    async mapRun(tag) {
+      let loader = this.$loading.show();
+      await apiService.mapRun(tag);
+      loader.hide();
     }
-  })
+  }
 };
 </script>
 
