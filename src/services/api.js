@@ -8,9 +8,10 @@ class ApiProvider {
     });
   }
 
-  async fastRestart() {
+  async mapName() {
     const requestBody = {};
-    await this.http.post("fastRestart", requestBody)
+    const responseBody = await this.http.post("mapName", requestBody);
+    return responseBody.map_tag
   }
 
   async mapRestart() {

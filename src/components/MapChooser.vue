@@ -2,12 +2,8 @@
   <v-container fluid style="mapchooser-container">
     <v-row>
       <v-col xl="4" lg="5" md="5" cols="12">
-        <div class="mapchooser-title">Current map</div>
-        <MapDetail :olgMap="currentMap" />
+        <div class="mapchooser-title">Server</div>
         <div class="mapchooser-actions">
-          <v-btn color="primary" x-large block v-on:click="fastRestart()"
-            >FAST RESTART
-          </v-btn>
           <v-btn color="error" x-large block v-on:click="mapRestart()"
             >MAP RESTART
           </v-btn>
@@ -61,7 +57,6 @@ export default {
   name: "MapChooser",
   components: { MapDetail },
   data: () => ({
-    currentMap: new OlgMap("q3dm16", "Bouncy Map"),
     maps: [
       new OlgMap("q3dm0", "Introduction"),
       new OlgMap("q3dm1", "Arena Gate"),
@@ -86,11 +81,6 @@ export default {
     ]
   }),
   methods: {
-    async fastRestart() {
-      let loader = this.$loading.show();
-      await apiService.fastRestart();
-      loader.hide();
-    },
     async mapRestart() {
       let loader = this.$loading.show();
       await apiService.mapRestart();
